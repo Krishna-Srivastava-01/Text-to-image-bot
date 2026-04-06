@@ -41,7 +41,8 @@ export default function App() {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${import.meta.env.VITE_HF_TOKEN}`
+            'Authorization': `Bearer ${import.meta.env.VITE_HF_TOKEN}`,
+            'Accept': 'image/jpeg'
           },
           body: JSON.stringify({ inputs: targetPrompt }),
         }
